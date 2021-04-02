@@ -15,6 +15,15 @@
 <input type="text" id="kataLaluan">
 <br>
 
+<a>onclick="manageLink()" id="linkMetallica" href="https://www.metallica.com" target="_blank" rel="noop"></a>
+
+<script>
+    function manageLink(){
+        event.preventDefault();
+        alert("Stopped default event!")
+    }
+</script>
+
 <script src="js/index.js"></script>
 </body>
 </html>
