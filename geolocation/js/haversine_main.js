@@ -9,7 +9,7 @@ function findNearest(lat,lon){
 let ellocate = document.getElementById("locate");
 ellocate.addEventListener("click",function(){
     if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(function(position{
+        navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
             let elDepulze = document.getElementById("depulze");
