@@ -13,11 +13,11 @@ pauseBtn.addEventListener("click",function()
 });
 
 let freezeBtn = document.getElementById("freezeBtn");
-freezeBtn.addEventListener("mousedown", function()
+freezeBtn.addEventListener("mousedown",function()
 {
     video.pause();
 });
-freezeBtn.addEventListener("mouseup", function(){
+freezeBtn.addEventListener("mouseup",function(){
     video.play();
 });
 
