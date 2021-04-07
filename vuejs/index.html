@@ -10,9 +10,17 @@
 <body>
 
     <div id="app">
-        {{message}}
+        {{ message }}
     </div>
 
+    <div id="apps2">
+        <span v-bind:title ="message">
+            Hover your mouse over me for a few second to see the title!
+        </span>
+        <a v-bind:href="linkUrl" target="_blank" rel="noopener noreferrer">
+            {{ linkText }}
+        </a>
+    </div>
    
     <script src="js/index.js"></script>
 </body>
