@@ -45,6 +45,18 @@
         </button>
     </div>
 
+    <div id="app6">
+        <p>{{message}}</p>
+        <input type="text" v-model="message">
+    </div>
+
+    <div id="app7">
+        <ol>
+            <grocery-list v-for="item in groceryList"
+            v-bind:todo="item" v-bind:key="item.id"></grocery-list>
+        </ol>
+    </div>
+
     <script src="js/index.js"></script>
 </body>
 </html>
