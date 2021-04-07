@@ -8,8 +8,8 @@ let app = new Vue({
 let app2 = new Vue({
     el: "#app2",
     data: {
-        message: "Loaded on " + new Date().toLocaleDateString()
-        linkUrl: "https://bbc.in/2LAnJs8",
+        message: "Loaded on " + new Date().toLocaleDateString(),
+        linkurl: "https://bbc.in/2LAnJs8",
         linkText: "Google is down!"
     }
 });
