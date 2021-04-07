@@ -49,3 +49,35 @@ let app5 = new Vue({
         }
     }
 });
+
+let app6 = new Vue({
+    el: "#app6",
+    data: {
+        message: "Hello World!"
+    }
+});
+
+Vue.component("grocery-list",{
+    props:["todo"],
+    template: "<li>{{todo.desc}}</li>"
+});
+
+let app7 = new Vue({
+    el: "#app7",
+    data: {
+        groceryList: [
+            {
+                id:0,
+                desc:"Vegetables"
+            },
+            {
+                id:1,
+                desc:"Cheese"
+            },
+            {
+                id:2,
+                desc:"Mineral Water"
+            }
+        ]
+    }
+});
