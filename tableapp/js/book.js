@@ -1,13 +1,13 @@
-let bookNowBtn - document.getElementById("bookNow");
+let bookNowBtn = document.getElementById("bookNow");
 bookNowBtn.addEventListener("click",function(){
-    let userName - document.getElementById("userName");
-    let userNameVal - userName.value;
+    let userName = document.getElementById("userName");
+    let userNameVal = userName.value;
 
-    let userEmail - document.getElementById("userEmail");
-    let userEmailVal - userEmail.value;
+    let userEmail = document.getElementById("userEmail");
+    let userEmailVal = userEmail.value;
 
-    let userPaxVal - document.getElementById("userPax").value;
-    let userRemarksVal - document.getElementById("userRemarks").value;
+    let userPaxVal = document.getElementById("userPax").value;
+    let userRemarksVal = document.getElementById("userRemarks").value;
 
     bookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 });
