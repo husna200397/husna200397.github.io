@@ -8,7 +8,7 @@ function GetBooking() {
     fetch(url)
     .then((response) => response.json())
     .then(json => {
-   let bookingNAmeList = document.getElementById("bookingNameList");
+   let bookingNameList = document.getElementById("bookingNameList");
    let bookingIds = [];
 
    //clear the table rows
