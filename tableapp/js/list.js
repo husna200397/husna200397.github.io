@@ -12,24 +12,24 @@ function GetBooking() {
    let bookingIds = [];
 
    //clear the table rows
-   for (let k = bookingNAmeList.length - 1; k > 0; k--){
-       bookingNAmeList.deleteRow(k);
+   for (let k = bookingNameList.length - 1; k > 0; k--){
+       bookingNameList.deleteRow(k);
    }
 
    for (let i = 0; i < json.bookinglist.length; i++) {
        let gName = json.bookinglist[i].name;
        let gEmail = json.bookinglist[i].email;
        let gPax = json.bookinglist[i].pax;
-       let gRemark = json.bookinglist[i].remarks;
+       let gRemarks = json.bookinglist[i].remarks;
        let gId = json.bookinglist[i].id;
        let btnId = "delete" + gId;
 
-       let row = bookingNAmeList.insertRow(bookingNAmeList.rows.length);
+       let row = bookingNameList.insertRow(bookingNameList.rows.length);
        row.insertCell(0).innerHTML = gId;
        row.insertCell(1).innerHTML = gName;
        row.insertCell(2).innerHTML = gEmail;
        row.insertCell(3).innerHTML = gPax;
-       row.insertCell(4).innerHTML = gRemark;
+       row.insertCell(4).innerHTML = gRemarks;
        row.insertCell(5).innerHTML = "<button id='" + btnId + "' class='btn btn-danger'> Delete </button>";
 
        bookingIds.push(btnId);
