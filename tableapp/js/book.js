@@ -31,6 +31,6 @@ fetch(url, {
 })
 .then((response) => response.json())
 .then(json => {
-  alert(json.bookinglist.id + "," + json.bookinglist.name + "successfully added");
+  alert(json.bookinglist.id + "," + json.bookinglist.name + " successfully added ")
 });
 }
