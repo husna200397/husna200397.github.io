@@ -12,7 +12,7 @@ function GetBooking() {
             let bookingids = [];
 
             //clear the table rows
-            for (let k = bookingNameList.length - 1; k > 0; k--) {
+            for (let k = bookingNameList.row.length - 1; k > 0; k--) {
                 bookingNameList.deleteRow(k);
             }
 
