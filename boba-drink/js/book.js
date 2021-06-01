@@ -1,5 +1,5 @@
-let bookNowBtn = document.getElementById("orderNow");
-bookNowBtn.addEventListener("click",function(){
+let orderNowBtn = document.getElementById("orderNow");
+orderNowBtn.addEventListener("click",function(){
     let username = document.getElementById("username");
     let usernameVal = username.value;
 
@@ -16,7 +16,7 @@ bookNowBtn.addEventListener("click",function(){
     bookNow(usernameVal, userorderVal, usertelephonenumberVal, userpaxVal, usercollecteditemVal, userremarkVal);
 });
 
-function bookNow(username, userorder, usertelephonenumber,userpax, usercollecteditem, userremark){
+function orderNow(username, userorder, usertelephonenumber,userpax, usercollecteditem, userremark){
     let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/boba/orderlist';
     let body = {
         orderlist: {
