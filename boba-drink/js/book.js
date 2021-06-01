@@ -1,27 +1,31 @@
 let bookNowBtn = document.getElementById("orderNow");
 bookNowBtn.addEventListener("click",function(){
     let username = document.getElementById("username");
-    let userNameVal = userName.value;
+    let usernameVal = username.value;
 
-    let userOrder = document.getElementById("userorder");
-    let userOrderVal = userMyOrder.value;
+    let userorder = document.getElementById("userorder");
+    let userorderVal = userorder.value;
 
-    let userPaxVal = document.getElementById("userPax").value;
+    let usertelephonenumberVal = document.getElementById("usertelephonenumber");
+    let userpaxVal = document.getElementById("userpax").value;
 
-    let userRemarksVal = document.getElementById("userPax").value;
+    let usercollecteditemVal = document.getElementById("usercollecteditem");
+    let userremarkVal = document.getElementById("userremark").value;
 
 
-    bookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
+    bookNow(usernameVal, userorderVal, usertelephonenumberVal, userpaxVal, usercollecteditemVal, userremarkVal);
 });
 
-function bookNow(userName, userMyOrder, userPax, userRemarks){
-    let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/tableapp/bookinglist';
+function bookNow(username, userorder, usertelephonenumber,userpax, usercollecteditem, userremark){
+    let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/boba/bookinglist';
     let body = {
         bookinglist: {
-            name: userName,
-            my order: userEmail,
-            pax: userPax,
-            remarks: userRemarks,
+            name: username,
+            order: userorder,
+            telephonenumber: usertelephonenumber,
+            pax: userpax,
+            collecteditem: usercollecteditem,
+            remark: userremark,
   }
 }
 fetch(url, {
