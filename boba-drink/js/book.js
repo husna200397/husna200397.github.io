@@ -1,10 +1,10 @@
 let bookNowBtn = document.getElementById("orderNow");
 bookNowBtn.addEventListener("click",function(){
-    let userName = document.getElementById("userName");
+    let username = document.getElementById("username");
     let userNameVal = userName.value;
 
-    let userMyOrder = document.getElementById("userMyOrder");
-    let userMyOrderVal = userMyOrder.value;
+    let userOrder = document.getElementById("userorder");
+    let userOrderVal = userMyOrder.value;
 
     let userPaxVal = document.getElementById("userPax").value;
 
@@ -14,12 +14,12 @@ bookNowBtn.addEventListener("click",function(){
     bookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 });
 
-function bookNow(userName, userEmail, userPax, userRemarks){
+function bookNow(userName, userMyOrder, userPax, userRemarks){
     let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/tableapp/bookinglist';
     let body = {
         bookinglist: {
             name: userName,
-            email: userEmail,
+            my order: userEmail,
             pax: userPax,
             remarks: userRemarks,
   }
