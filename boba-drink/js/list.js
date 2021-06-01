@@ -8,12 +8,12 @@ function GetOrder() {
     fetch(url)
         .then((response) => response.json())
         .then(json => {
-            let orderlist = document.getElementById("ordernamelist");
+            let orderlist = document.getElementById("orderlist");
             let orderids = [];
 
             //clear the table rows
             for (let k = orderlist.row.length - 1; k > 0; k--) {
-                ordernamelist.deleteRow(k);
+                orderlist.deleteRow(k);
             }
 
             for (let i = 0; i < json.orderlist.length; i++) {
