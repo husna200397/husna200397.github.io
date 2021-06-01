@@ -13,7 +13,7 @@ orderNowBtn.addEventListener("click",function(){
     let userremarkVal = document.getElementById("userremark").value;
 
 
-    bookNow(usernameVal, userorderVal, usertelephonenumberVal, userpaxVal, usercollecteditemVal, userremarkVal);
+    orderNow(usernameVal, userorderVal, usertelephonenumberVal, userpaxVal, usercollecteditemVal, userremarkVal);
 });
 
 function orderNow(username, userorder, usertelephonenumber,userpax, usercollecteditem, userremark){
