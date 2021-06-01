@@ -19,7 +19,7 @@ bookNowBtn.addEventListener("click",function(){
 function bookNow(username, userorder, usertelephonenumber,userpax, usercollecteditem, userremark){
     let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/boba/orderlist';
     let body = {
-        bookinglist: {
+        orderlist: {
             name: username,
             order: userorder,
             telephonenumber: usertelephonenumber,
@@ -37,6 +37,6 @@ fetch(url, {
 })
 .then((response) => response.json())
 .then(json => {
-  alert(json.bookinglist.id + "," + json.bookinglist.name + " successfully added ")
+  alert(json.orderlist.id + "," + json.orderlist.name + " successfully added ")
 });
 }
