@@ -51,7 +51,7 @@ function GetOrder() {
 }
 
 function DeleteOrder(id) {
-    let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/boba/orderlist/2';
+    let url = 'https://api.sheety.co/a9ad430d8fe2402028bbf4ba388b0dbe/boba/orderlist';
     fetch(url, {
         method: 'DELETE',
     })
