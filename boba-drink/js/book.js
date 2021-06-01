@@ -37,6 +37,6 @@ fetch(url, {
 })
 .then((response) => response.json())
 .then(json => {
-  alert(json.orderlist.id + "," + json.orderlist.name + " successfully added ")
+  alert(json.orderlist.id + " successfully added ")
 });
 }
